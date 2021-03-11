@@ -5,11 +5,23 @@
   <meta charset="utf-8">
   <title>Helen Webb UX/UI Designer Northern VA</title>
   <link href="image/favicon.ico" rel="shortcut icon">
+  <!--link to stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!--normalize-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!--font-->
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <!--viewport for devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <header>
-    <div>
+    <div class="container">
       <picture>
         <source srcset="image/logo.png" media="(max-width:767px)">
         <img src="image/logo.png" alt="logo">
@@ -26,57 +38,59 @@
   </header>
 
   <main>
-    <div>
-      <div>
+    <div id="hero">
+      <div=class"container">
         <h1>Hello! My name is Helen Webb</h1>
         <span>I am a UI/UX Designer based in the Northern Virginia area.</span>
-      </div>
-      <p>With a marketing degree, front-end experience, and a background in customer service and event planning, I hope to become a valuable member to a design team to create memorable UI experiences users will enjoy.</p>
+    </div>
+    <p>With a marketing degree, front-end experience, and a background in customer service and event planning, I hope to become a valuable member to a design team to create memorable UI experiences users will enjoy.</p>
     </div>
 
-    <div>
-      <div> </div>
-      <h2>My Work</h2>
+    <div id="work">
+      <div=class"container">
+        <h2>My Work</h2>
 
-      <div>
-        <div>
+        <div class="row">
+          <div>
+            <picture>
+              <source srcset="image/beautify/beautify600.png" media="(max-width:767px)">
+              <img src="image/beautify/beautify1200.png" alt="BeautifyMockup">
+            </picture>
+          </div>
+          <div>
+            <h3>Beautify</h3>
+            <p>Beautify is a luxury cosmetics shopping app with an easy navigation that was inspired by simple customer journey maps to unite and communicate its purpose throughout all its wireframes / screens.</p>
+            <p>User flow testing and multiple iterations of the wireframes resulted in a clear, concise flow that allows Beautify to fulfill its goal of an easy navigation to help customers find exactly what they are looking for in a timely manner.
+            </p>
+            <a href="#" class="button">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="work">
+        <div=class"container">
           <picture>
-            <source srcset="image/beautify/beautify600.png" media="(max-width:767px)">
-            <img src="image/beautify/beautify1200.png" alt="BeautifyMockup">
+            <source srcset="image/noted/noted600.png" media="(max-width:767px)">
+            <img src="image/noted/noted1200.png" alt="NotedMockup">
           </picture>
-        </div>
-        <div>
-          <h3>Beautify</h3>
-          <p>Beautify is a luxury cosmetics shopping app with an easy navigation that was inspired by simple customer journey maps to unite and communicate its purpose throughout all its wireframes / screens.</p>
-          <p>User flow testing and multiple iterations of the wireframes resulted in a clear, concise flow that allows Beautify to fulfill its goal of an easy navigation to help customers find exactly what they are looking for in a timely manner.</p>
-          <a href="#">ReadMore</a>
-        </div>
       </div>
-    </div>
-
-    <div>
-      <div>
-        <picture>
-          <source srcset="image/noted/noted600.png" media="(max-width:767px)">
-          <img src="image/noted/noted1200.png" alt="NotedMockup">
-        </picture>
-      </div>
-      <div>
+      <div id="work">
         <h4>Noted</h4>
         <p>Noted is a minimalist, modern, note-taking app that was made within a time restraint.</p>
         <p>To rapidly procure wireframes for Noted, I used premade libraries from another similar messenger app I had made and amended it alongside with feedback from consumer testing to create final product prototypes.</p>
-        <a href="#">ReadMore</a>
+        <a href="#" class="button">Read more</a>
       </div>
     </div>
 
   </main>
 
   <footer>
-    <div>
+    <div=class"container">
       <h2>Get in Touch</h2>
       <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: +49 1234567. Prefer sending an email?</p>
       <div>
-        <a href="mailto:office@careerfoundry.com">Email Me</a>
+        <a href="mailto:office@careerfoundry.com" class="button contact">Send me an email</a>
+        <!--second class used "contact" to make sure styling only applies to this button-->
       </div>
 
       <div>
@@ -96,8 +110,8 @@
       </footer>
       <a href="about.html#skills">My Skills</a>
 
-        <p>Copyright Helen-Webb 2021</p>
-    </div>
+      <p>Copyright Helen-Webb 2021</p>
+      </div>
   </footer>
 </body>
 

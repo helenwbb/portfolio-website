@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(233, 219, 211);
+  font-family: 'Gilda Display', serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgb(33, 43, 28);
+}
+
+img {
+  width: 100%;
+}
+
+/*header styling*/
+header {
+  background-color: rgb(233, 219, 211);
+  text-align: center;
+  padding: 10px margin: 0 auto
+    /*box shadow*/
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
+  position: fixed;
+  width: 100%
+}
+
+main {
+  padding-top: 133px;
+}
+
+h1, h2, h3, h4 {
+  background-color: rgb(233, 219, 211);
+  font-family: 'Gilda Display', serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.6;
+  width: 100%;
+  color: rgb(126, 135, 119)
+}
+
+h1 {
+  background-color: rgb(233, 219, 211);
+  font-size: 2.75em;
+  font-weight: 700;
+  width: 100%;
+  color: rgb(126, 135, 119)
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  width: 100%;
+  color: rgb(126, 135, 119)
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+  width: 100%;
+  color: rgb(141, 44, 42)
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+  width: 100%;
+  color: rgb(141, 44, 42)
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(139, 165, 241);
+}
+
+/*must come after visited to be effective!! */
+a:focus {
+  color: rgb(95, 115, 175);
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(139, 165, 241);
+}
+
+/*layout Styling*/
+.container {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
+
+#behance {
+  padding: 0 15px;
+}
+
+#skills {
+  padding: 0 15px;
+}
+
+#tools {
+  padding: 0 15px;
+}
+
+#hero h1, h2, h3, h4, h5 {
+  text-align: center;
+  background-color: rgb(213, 187, 171);
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#work {
+  text-align: center;
+}
+
+#span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#story {
+  text-align: center;
+}
+
+/*#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+}*/
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+nav>ul>li>a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+nav>ul>li>a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(139, 165, 241);
+}
+
+nav>ul>li>a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(139, 165, 241);
+}
+
+/*button - must go at the END of the CSS document to keep code from being overwritten*/
+.button {
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(145, 177, 120);
+  color: #ffffff;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgb(126, 135, 119);
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/*email button*/
+.button.contact {
+  background-color: rgb(80, 85, 100);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+
+.button.contact:hover {
+  background-color: rgb(95, 115, 175);
+  color: rgb(255, 255, 255);
+}
+
+/*CV Button*/
+.button.downloadcv {
+  background-color: rgb(145, 177, 120);
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+
+.button.downloadcv:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.downloadcv:active {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/*Colors Used:
+    Primary Color (Light Green): (126,135,119);
+    Secondary Color (Dark Green): (33,43,28);
+    Accent Color (Red): (141,44,42);
+    Accent Color (Light Tan): (233,219,211);
+    Accent Color (Dark Tan): (213,187,171);
+    Link (Peridot Green): (145,177,120);
+    link (Periwinkle): (139,165,241);
+    Link Clicked (Slate Grey): (80,85,100);
+    Focus (Dark Periwinkle): (95,115,175);
+    White (255,255,255)
+    Black (0,0,0)
+    Email Button (Pink) (232,189,208)
+        */
