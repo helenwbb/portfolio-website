@@ -221,14 +221,13 @@ nav>ul>li>a:hover {
 }
 
 .button.contact:hover {
-  background-color: rgb(95, 115, 175);
-  color: rgb(255, 255, 255);
+  background-color:rgb(95,115,175);
+  color:rgb(255,255,255);
 }
 
 /*CV Button*/
-.button.downloadcv {
-  background-color: rgb(145, 177, 120);
-  color: rgb(0, 0, 0);
+.button.downloadcv{background-color:rgb(145,177,120);
+  color:rgb(0,0,0);
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
