@@ -7,6 +7,7 @@ body {
   font-family: 'Gilda Display', serif;
   font-size: 16px;
   font-weight: 300;
+  text-align: center;
   line-height: 1.6;
   color: rgb(33, 43, 28);
 }
@@ -18,9 +19,9 @@ img {
 /*header styling*/
 header {
   background-color: rgb(233, 219, 211);
-  text-align: center;
   padding: 10px;
   margin: 0 auto;
+  text-align: center;
     /*box shadow*/
     -webkit-box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
   -moz-box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
@@ -30,7 +31,7 @@ header {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 99.8px;
 }
 
 h1, h2, h3, h4 {
@@ -93,13 +94,22 @@ a:active {
 
 /*layout Styling*/
 .container {
+  margin: 25px 0;
   padding: 0 15px;
   text-align: center;
 }
 
 .row {
   margin: 25px 0;
+  padding: 0 15px;
+  text-align: center;
   /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .center {
@@ -107,8 +117,14 @@ a:active {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 90px;
+  margin: auto;
+}
+
+.social {
+  display: inline-block;
   text-align: center;
+  width: 100%
 }
 
 #behance {
@@ -125,11 +141,15 @@ a:active {
 
 #hero h1, h2, h3, h4, h5 {
   text-align: center;
-  background-color: rgb(213, 187, 171);
+  background-color: rgb(233,219,211);
   padding: 20px 0;
-  display: inline-block;
+  display: block;
   width: 100%;
 }
+
+/*#hero span {
+  display: block;
+}*/
 
 #work {
   text-align: center;
@@ -145,29 +165,36 @@ a:active {
   text-align: center;
 }
 
+#about-page h3 { margin-top: 0;}
+
 /*#hero h1 {
   margin: 0;
   padding: 0.67em 0;
 }*/
-nav>ul {
+nav > ul {
   list-style-type: none;
+  display: inline-block;
   padding: 0;
 }
 
-nav>ul>li {
+nav > ul > li {
   display: inline-block;
-  width: 100px;
-  padding: 15px;
+  width: 100%;
+  text-align: center;
+  padding: 0px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700px;
   color:rgb(33,43,28);
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
   color: rgb(255, 255, 255);
 }
 
@@ -195,27 +222,26 @@ nav>ul>li>a:hover {
 /*button - must go at the END of the CSS document to keep code from being overwritten*/
 .button {
   display: inline-block;
-  width: 100%;
+  width: auto;
   background-color: rgb(145, 177, 120);
   color: #ffffff;
   /* needed to override the default link color */
+  text-transform: uppercase;
+  text-decoration: none;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgb(126, 135, 119);
   /* width of the border, type, color */
-  transition: 0.2s; opacity;
-  text-transform: uppercase;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  text-decoration: none;
 }
 
 .button:active {
   opacity: 0.8;
-  text-decoration: none;
 }
 
 /*email button*/
@@ -262,3 +288,136 @@ nav>ul>li>a:hover {
     Black (0,0,0)
     Email Button (Pink) (232,189,208)
         */
+/*media queries at bottom of css file*/
+/*media queries = aka breakpoints for different devices and screens*/
+
+/*no css for small screens since small screens was out defualt size*/
+
+/*meduim screens*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+}
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;}
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    padding: 10px;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/*large screens*/
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+}
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;}
+
+  #hero span {
+    display: block;
+  }
+
+  .col-lg-7 {
+    width: 60%
+    padding: 10px;
+  }
+
+  .col-lg-5 {
+    width: 40%
+    padding: 10px;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*left column
+<div class="row">
+  <div class="column col-md-6 col-lg-7">
+    <picture>*/
+
+/*right column
+<div class="column col-md-6 col-lg-5">
+    <h3>Project name</h3>*/
+
+/*extra large screens*/
+@media only screen and (min-width: 1440px) {
+
+  /*animation*/
+  .berlin-illustration {
+    width 100%;
+  max-width 100%;
+  height: auto;
+  }
+
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+
+  .sun {
+    animation-name: color-change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation-name: cloud-move;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation-duration: 34s;
+    animation-name: cloud-move-reverse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
