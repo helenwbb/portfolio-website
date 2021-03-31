@@ -19,11 +19,14 @@ img {
 /*header styling*/
 header {
   background-color: rgb(233, 219, 211);
-  padding: 10px;
+  padding: 20px;
   margin: 0 auto;
   text-align: center;
-    /*box shadow*/
-    -webkit-box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
+  max-width: 150px;
+  min-width: 120px;
+
+  /*box shadow*/
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
   -moz-box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
   box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
   position: fixed;
@@ -31,164 +34,177 @@ header {
 }
 
 main {
-  padding-top: 99.8px;
-}
+  padding-top: 200px;
 
-h1, h2, h3, h4 {
-  background-color: rgb(233, 219, 211);
-  font-family: 'Gilda Display', serif;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 1.6;
-  width: 100%;
-  color: rgb(126, 135, 119);
-}
+  /*was 99.8 but top header still was not showing so it was changed*/
 
-h1 {
-  background-color: rgb(233, 219, 211);
-  font-size: 2.75em;
-  font-weight: 700;
-  width: 100%;
-  color: rgb(126, 135, 119);
-}
+  h1, h2, h3, h4 {
+    background-color: rgb(233, 219, 211);
+    font-family: 'Gilda Display', serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.6;
+    width: 100%;
+    color: rgb(126, 135, 119);
+  }
 
-h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-  width: 100%;
-  color: rgb(126, 135, 119);
-}
+  h1 {
+    background-color: rgb(233, 219, 211);
+    font-size: 2.75em;
+    font-weight: 700;
+    width: 100%;
+    color: rgb(126, 135, 119);
+    padding: 15px;
+  }
 
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-  width: 100%;
-  color: rgb(141, 44, 42);
-}
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+    width: 100%;
+    color: rgb(126, 135, 119);
+    padding: 15px;
+  }
 
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
-  width: 100%;
-  color: rgb(141, 44, 42);
-}
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+    width: 100%;
+    color: rgb(141, 44, 42);
+    padding: 15px;
+  }
 
-a:visited {
-  color: rgb(0, 0, 0);
-}
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+    width: 100%;
+    color: rgb(141, 44, 42);
+    padding: 15px;
+  }
 
-a:hover {
-  color: rgb(139, 165, 241);
-}
+  a:visited {
+    color: rgb(0, 0, 0);
+  }
 
-/*must come after visited to be effective!! */
-a:focus {
-  color: rgb(95, 115, 175);
-  text-decoration: underline;
-}
+  a:hover {
+    color: rgb(139, 165, 241);
+  }
 
-a:active {
-  color: rgb(139, 165, 241);
-}
+  /*must come after visited to be effective!! */
+  a:focus {
+    color: rgb(95, 115, 175);
+    text-decoration: underline;
+  }
 
-/*layout Styling*/
-.container {
-  margin: 25px 0;
-  padding: 0 15px;
-  text-align: center;
-}
+  a:active {
+    color: rgb(139, 165, 241);
+  }
 
-.row {
-  margin: 25px 0;
-  padding: 0 15px;
-  text-align: center;
-  /* 25px top and bottom, 0 left and right */
-}
+  /*layout Styling*/
+  .container {
+    margin: 25px 0;
+    padding: 0 15px;
+    text-align: center;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .row {
+    margin: 25px 0;
+    padding: 0 15px;
+    text-align: center;
+    /* 25px top and bottom, 0 left and right */
+  }
 
-.center {
-  text-align: center;
-}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-.logo {
-  max-width: 90px;
-  margin: auto;
-}
+  .center {
+    text-align: center;
+    /*may have to remove for queries*/
+  }
 
-.social {
-  display: inline-block;
-  text-align: center;
-  width: 100%
-}
+  .logo {
+    max-width: 100px;
+    margin: auto;
+    /*float:left;*/
+  }
 
-#behance {
-  padding: 0 15px;
-}
+  .social {
+    display: inline-block;
+    text-align: center;
+    width: 100%
+  }
 
-#skills {
-  padding: 0 15px;
-}
+  #behance {
+    padding: 0 15px;
+  }
 
-#tools {
-  padding: 0 15px;
-}
+  #skills {
+    padding: 0 15px;
+  }
 
-#hero h1, h2, h3, h4, h5 {
-  text-align: center;
-  background-color: rgb(233,219,211);
-  padding: 20px 0;
-  display: block;
-  width: 100%;
-}
+  #tools {
+    padding: 0 15px;
+  }
 
-/*#hero span {
+  #hero h1, h2, h3, h4, h5 {
+    text-align: center;
+    background-color: rgb(233, 219, 211);
+    padding: 20px 0;
+    display: block;
+    width: 100%;
+  }
+
+  /*#hero span {
   display: block;
 }*/
+  #work {
+    text-align: center;
+  }
 
-#work {
-  text-align: center;
-}
+  #span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
 
-#span {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
+  #story {
+    text-align: center;
+  }
 
-#story {
-  text-align: center;
-}
+  #about-page h3 {
+    margin-top: 0;
+  }
 
-#about-page h3 { margin-top: 0;}
-
-/*#hero h1 {
+  /*#hero h1 {
   margin: 0;
   padding: 0.67em 0;
 }*/
-nav > ul {
+  nav {
+    display: inline-block;
+    width: 100%
+  }
+}
+
+nav>ul {
   list-style-type: none;
-  display: inline-block;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
-  width: 100%;
-  text-align: center;
+  list-style-type: none;
   padding: 0px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700px;
-  color:rgb(33,43,28);
+  color: rgb(33, 43, 28);
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
+  display: inline-block;
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -217,6 +233,10 @@ nav>ul>li>a:hover {
   text-transform: uppercase;
   font-weight: 700;
   color: rgb(139, 165, 241);
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
 /*button - must go at the END of the CSS document to keep code from being overwritten*/
@@ -253,13 +273,14 @@ nav>ul>li>a:hover {
 }
 
 .button.contact:hover {
-  background-color:rgb(95,115,175);
-  color:rgb(255,255,255);
+  background-color: rgb(95, 115, 175);
+  color: rgb(255, 255, 255);
 }
 
 /*CV Button*/
-.button.downloadcv{background-color:rgb(145,177,120);
-  color:rgb(0,0,0);
+.button.downloadcv {
+  background-color: rgb(145, 177, 120);
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
@@ -290,22 +311,35 @@ nav>ul>li>a:hover {
         */
 /*media queries at bottom of css file*/
 /*media queries = aka breakpoints for different devices and screens*/
-
 /*no css for small screens since small screens was out defualt size*/
-
 /*meduim screens*/
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
-}
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;}
+    }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    position: relative;
+  }
 
   #hero span {
     display: block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .col-md-6 {
@@ -323,101 +357,132 @@ nav {
     display: table;
   }
 
-/*large screens*/
-@media only screen and (min-width: 1024px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
+  .logo {
+    max-width: 90px;
+    align-content: center;
+  }
 }
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;}
 
-  #hero span {
-    display: block;
-  }
+  /*large screens*/
+  @media only screen and (min-width: 1024px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
 
-  .col-lg-7 {
-    width: 60%
-    padding: 10px;
-  }
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
 
-  .col-lg-5 {
-    width: 40%
-    padding: 10px;
-  }
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
 
-  [class*="col-"] {
-    float: left;
-  }
+    .navtoggle li:last-child {
+      display: none;
+    }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+    #hero span {
+      display: block;
+    }
 
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .logo {
+      max-width: 90px;
+    }
 
-/*left column
+    .col-lg-7 {
+      width: 60% padding: 10px;
+    }
+
+    .col-lg-5 {
+      width: 40% padding: 10px;
+    }
+
+    [class*="col-"] {
+      float: left;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /*left column
 <div class="row">
   <div class="column col-md-6 col-lg-7">
     <picture>*/
-
-/*right column
+    /*right column
 <div class="column col-md-6 col-lg-5">
     <h3>Project name</h3>*/
+    /*extra large screens*/
+    @media only screen and (min-width: 1440px) {
 
-/*extra large screens*/
-@media only screen and (min-width: 1440px) {
+      /*animation*/
+      .berlin-illustration {
+        width 100%;
+        max-width 100%;
+        height: auto;
+      }
 
-  /*animation*/
-  .berlin-illustration {
-    width 100%;
-  max-width 100%;
-  height: auto;
-  }
+      @keyframes color-change {
+        from {
+          fill: #edc655;
+        }
 
-  @keyframes color-change {
-    from {fill: #edc655;}
-    to {fill: #f76414;}
-  }
+        to {
+          fill: #f76414;
+        }
+      }
 
-  .sun {
-    animation-name: color-change;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
+      .sun {
+        animation-name: color-change;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
 
-  @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
-  }
+      @keyframes cloud-move {
+        from {
+          transform: translate(0, 50px);
+        }
 
-  .cloud-front {
-    animation-name: cloud-move;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
+        to {
+          transform: translate(200px, 50px);
+        }
+      }
 
-  @keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
-  }
+      .cloud-front {
+        animation-name: cloud-move;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
 
-  .cloud-back {
-    animation-duration: 34s;
-    animation-name: cloud-move-reverse;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
+      @keyframes cloud-move-reverse {
+        from {
+          transform: translate(446px, 48px);
+        }
+
+        to {
+          transform: translate(100px, 48px);
+        }
+      }
+
+      .cloud-back {
+        animation-duration: 34s;
+        animation-name: cloud-move-reverse;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }

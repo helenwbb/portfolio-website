@@ -19,15 +19,17 @@
 
   <!--viewport for devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CDN Kit for JS hamburger menu effect-->
+  <script src="https://kit.fontawesome.com/afa14b352a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
-      <div class="logo">
+      <div class="navtoggle" id="myNavtoggle">
         <picture>
-        <source srcset="image/logo.png" media="(max-width:767px)">
-        <img src="image/logo.png" alt="logo">
+          <source srcset="image/logo.png" media="(max-width:767px)">
+          <img class="logo" src="image/logo.png" alt="logo">
         </picture>
 
         <nav>
@@ -35,6 +37,8 @@
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <!--CDN Hamburger Menu-->
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction(onclick)"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -1067,7 +1071,7 @@
 
     <p>Copyright Helen-Webb 2021</p>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
