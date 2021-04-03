@@ -38,7 +38,10 @@ main {
 
   /*was 99.8 but top header still was not showing so it was changed*/
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     background-color: rgb(233, 219, 211);
     font-family: 'Gilda Display', serif;
     text-align: center;
@@ -114,6 +117,10 @@ main {
     /* 25px top and bottom, 0 left and right */
   }
 
+[class*="col-"] {
+  float: left;
+}
+
   .row::after {
     content: "";
     clear: both;
@@ -134,7 +141,7 @@ main {
   .social {
     display: inline-block;
     text-align: center;
-    width: 100%
+    width: 100%;
   }
 
   #behance {
@@ -149,7 +156,11 @@ main {
     padding: 0 15px;
   }
 
-  #hero h1, h2, h3, h4, h5 {
+  #hero h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     text-align: center;
     background-color: rgb(233, 219, 211);
     padding: 20px 0;
@@ -182,19 +193,14 @@ main {
   margin: 0;
   padding: 0.67em 0;
 }*/
-  nav {
-    display: inline-block;
-    width: 100%
-  }
-}
 
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li {
-  display: inline-block;
   list-style-type: none;
   padding: 0px;
   text-transform: uppercase;
@@ -205,6 +211,7 @@ nav>ul>li {
 
 nav>ul>li>a {
   display: inline-block;
+  list-style-type: none;
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -235,8 +242,37 @@ nav>ul>li>a:hover {
   color: rgb(139, 165, 241);
 }
 
+.navtoggle.responsive li  {
+  display: block;
+}
+
 .navtoggle li:not(:last-child) {
   display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgb(145, 177, 120);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 /*button - must go at the END of the CSS document to keep code from being overwritten*/
@@ -316,7 +352,7 @@ nav>ul>li>a:hover {
 @media only screen and (min-width: 641px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 10px 0 4px;
     }
 
   nav {
@@ -324,6 +360,10 @@ nav>ul>li>a:hover {
     float: right;
     margin-top: 4px;
   }
+
+  nav > ul {
+  margin: 1em 0;
+}
 
   nav>ul>li {
     display: inline-block;
@@ -335,7 +375,7 @@ nav>ul>li>a:hover {
   }
 
   .navtoggle li:not(:last-child) {
-    display: inline-block;
+    display: none;
   }
 
   .navtoggle li:last-child {
@@ -347,14 +387,12 @@ nav>ul>li>a:hover {
     padding: 10px;
   }
 
-  [class*="col-"] {
-    float: left;
+  .col-md-7 {
+    width: 60%; padding: 10px;
   }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  .col-md-5 {
+    width: 40%; padding: 10px;
   }
 
   .logo {
@@ -367,7 +405,7 @@ nav>ul>li>a:hover {
   @media only screen and (min-width: 1024px) {
     header {
       text-align: unset;
-      padding: 20px 0 13px;
+      padding: 10px 0 4px;
     }
 
     nav {
@@ -393,21 +431,11 @@ nav>ul>li>a:hover {
     }
 
     .col-lg-7 {
-      width: 60% padding: 10px;
+      width: 60%; padding: 10px;
     }
 
     .col-lg-5 {
-      width: 40% padding: 10px;
-    }
-
-    [class*="col-"] {
-      float: left;
-    }
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
+      width: 40%; padding: 10px;
     }
 
     .container {
@@ -415,6 +443,7 @@ nav>ul>li>a:hover {
       margin-left: auto;
       margin-right: auto;
     }
+  }
 
     /*left column
 <div class="row">
@@ -423,13 +452,14 @@ nav>ul>li>a:hover {
     /*right column
 <div class="column col-md-6 col-lg-5">
     <h3>Project name</h3>*/
+
     /*extra large screens*/
     @media only screen and (min-width: 1440px) {
 
       /*animation*/
       .berlin-illustration {
-        width 100%;
-        max-width 100%;
+        width: 100%;
+        max-width: 100%;
         height: auto;
       }
 
