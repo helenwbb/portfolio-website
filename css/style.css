@@ -35,7 +35,7 @@ header {
 
 main {
   padding-top: 200px;
-
+}
   /*was 99.8 but top header still was not showing so it was changed*/
 
   h1,
@@ -133,7 +133,7 @@ main {
   }
 
   .logo {
-    max-width: 100px;
+    max-width: 120px;
     margin: auto;
     /*float:left;*/
   }
@@ -196,7 +196,7 @@ main {
 
 nav>ul {
   list-style-type: none;
-  padding: 0;
+  padding:0;
   margin: 0;
 }
 
@@ -455,7 +455,7 @@ nav>ul>li>a:hover {
 
     /*extra large screens*/
     @media only screen and (min-width: 1440px) {
-
+}
       /*animation*/
       .berlin-illustration {
         width: 100%;
