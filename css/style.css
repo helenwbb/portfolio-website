@@ -3,13 +3,13 @@
 }
 
 body {
-  background-color: rgb(233, 219, 211);
-  font-family: 'Gilda Display', serif;
+  background-color: #F2EAE6;
+  font-family: 'Tajawal', sans-serif;
   font-size: 16px;
   font-weight: 300;
   text-align: center;
   line-height: 1.6;
-  color: rgb(33, 43, 28);
+  color: #212b1c;
 }
 
 img {
@@ -18,11 +18,12 @@ img {
 
 /*header styling*/
 header {
-  background-color: rgb(233, 219, 211);
+  background-color: #F2EAE6; /*added to fix warning css*/
   padding: 20px;
   margin: 0 auto;
   text-align: center;
   min-width: 120px;
+
 
   /*box shadow*/
   -webkit-box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
@@ -41,22 +42,22 @@ main {
   h2,
   h3,
   h4 {
-    background-color: rgb(233, 219, 211);
-    font-family: 'Gilda Display', serif;
+    background-color: #F2EAE6;
+    font-family: 'Tajawal', sans-serif;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     line-height: 1.6;
     width: 100%;
-    color: rgb(126, 135, 119);
+    color: #617F4A;
   }
 
   h1 {
-    background-color: rgb(233, 219, 211);
+    background-color: #F2EAE6;
     font-size: 2.75em;
     font-weight: 700;
     width: 100%;
-    color: rgb(126, 135, 119);
+    color: #617F4A;
     padding: 15px;
   }
 
@@ -64,7 +65,7 @@ main {
     font-size: 2.25em;
     font-weight: 700;
     width: 100%;
-    color: rgb(126, 135, 119);
+    color: #617F4A;
     padding: 15px;
   }
 
@@ -72,7 +73,7 @@ main {
     font-size: 1.75em;
     font-weight: 400;
     width: 100%;
-    color: rgb(141, 44, 42);
+    color: #8D2C2A;
     padding: 15px;
   }
 
@@ -80,26 +81,26 @@ main {
     font-size: 1.35em;
     font-weight: 400;
     width: 100%;
-    color: rgb(141, 44, 42);
+    color: #8D2C2A;
     padding: 15px;
   }
 
   a:visited {
-    color: rgb(0, 0, 0);
+    color: #fff;
   }
 
   a:hover {
-    color: rgb(139, 165, 241);
+    color: #fff;
   }
 
   /*must come after visited to be effective!! */
   a:focus {
-    color: rgb(95, 115, 175);
+    color: #617F4A;
     text-decoration: underline;
   }
 
   a:active {
-    color: rgb(139, 165, 241);
+    color: #617F4A;
   }
 
   /*layout Styling*/
@@ -161,7 +162,7 @@ main {
   h4,
   h5 {
     text-align: center;
-    background-color: rgb(233, 219, 211);
+    background-color: #F2EAE6;
     padding: 20px 0;
     display: block;
     width: 100%;
@@ -176,7 +177,7 @@ main {
 
   #span {
     display: inline-block;
-    width: 100%;
+    width: 25%;
     text-align: center;
   }
 
@@ -195,8 +196,8 @@ main {
 
 nav>ul {
   list-style-type: none;
-  padding:0;
-  margin: 0;
+  padding:0px;
+  margin: 0px;
 }
 
 nav>ul>li {
@@ -204,41 +205,44 @@ nav>ul>li {
   padding: 0px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 700px;
-  color: rgb(33, 43, 28);
+  font-weight: 700;
+  color: #212b1c;
+  margin-top: auto;
+  text-align: center;
 }
 
 nav>ul>li>a {
   display: inline-block;
   list-style-type: none;
+  text-decoration: none;
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
-  display: inline-block;
-  width: 100%;
-  color: rgb(255, 255, 255);
+  /*margin: auto;
+  /*width: 100%;*/
+  color: #212b1c;
 }
 
 nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: rgb(0, 0, 0);
+  color: #212b1c;
 }
 
 nav>ul>li>a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: rgb(139, 165, 241);
+  color: #212b1c;
 }
 
 nav>ul>li>a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: rgb(139, 165, 241);
+  color: #617F4A;
 }
 
 .navtoggle.responsive li  {
@@ -278,8 +282,8 @@ nav>ul>li>a:hover {
 .button {
   display: inline-block;
   width: auto;
-  background-color: rgb(145, 177, 120);
-  color: #ffffff;
+  background-color: #617F4A;
+  color: #fff;
   /* needed to override the default link color */
   text-transform: uppercase;
   text-decoration: none;
@@ -301,21 +305,21 @@ nav>ul>li>a:hover {
 
 /*email button*/
 .button.contact {
-  background-color: rgb(80, 85, 100);
-  color: rgb(255, 255, 255);
+  background-color: #8D2C2A;
+  color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
 
 .button.contact:hover {
-  background-color: rgb(95, 115, 175);
-  color: rgb(255, 255, 255);
+  background-color: #617F4A;
+  color: #ffffff;
 }
 
 /*CV Button*/
 .button.downloadcv {
-  background-color: rgb(145, 177, 120);
-  color: rgb(0, 0, 0);
+  background-color: #617F4A;
+  color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
@@ -331,15 +335,23 @@ nav>ul>li>a:hover {
 }
 
 /*Colors Used:
-    Primary Color (Light Green): (126,135,119);
-    Secondary Color (Dark Green): (33,43,28);
+Green Buttons: #617F4A;
+White Font: #fff;
+Background: #F2EAE6;
+Headers:
+Link Clicked Grey: #505564;
+Dark Green Main Font: #212b1c;
+Red Project Titles: #8D2C2A;
+
+
+
     Accent Color (Red): (141,44,42);
+
     Accent Color (Light Tan): (233,219,211);
     Accent Color (Dark Tan): (213,187,171);
-    Link (Peridot Green): (145,177,120);
-    link (Periwinkle): (139,165,241);
+
     Link Clicked (Slate Grey): (80,85,100);
-    Focus (Dark Periwinkle): (95,115,175);
+
     White (255,255,255)
     Black (0,0,0)
     Email Button (Pink) (232,189,208)
@@ -358,19 +370,22 @@ nav>ul>li>a:hover {
     width: auto;
     float: right;
     margin-top: 4px;
+    text-decoration: none;
   }
 
   nav > ul {
   margin: 1em 0;
-}
+  width: 100%;
+  }
 
   nav>ul>li {
     display: inline-block;
     position: relative;
-  }
+    align-content: center;
+    }
 
   #hero span {
-    display: block;
+    display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
@@ -411,6 +426,7 @@ nav>ul>li>a:hover {
       width: auto;
       float: right;
       margin-top: 4px;
+      margin: auto;
     }
 
     .navtoggle li:not(:last-child) {

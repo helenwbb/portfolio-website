@@ -15,8 +15,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!--font-->
-  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
   <!--viewport for devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--CDN Kit for JS hamburger menu effect-->
@@ -28,8 +28,8 @@
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
         <picture>
-          <source srcset="image/logo.png" media="(max-width:767px)">
-          <img class="logo" src="image/logo.png" alt="logo">
+          <source srcset="image/webb2.png" media="(max-width:767px)">
+          <img class="logo" src="image/webb2.png" alt="logo">
         </picture>
 
         <nav>
@@ -37,6 +37,7 @@
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="resume.html">Resume</a></li>
             <!--CDN Hamburger Menu-->
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
@@ -87,15 +88,21 @@
             <h4>Noted</h4>
             <p>Noted is a minimalist, modern, note-taking app that was made within a time restraint.</p>
             <p>To rapidly procure wireframes for Noted, I used premade libraries from another similar messenger app I had made and amended it alongside with feedback from consumer testing to create final product prototypes.</p>
-            <a href="#" class="button">Read more</a>
+            <a href="#" class="button" style="
+            background:grey;
+            pointer-events:none;"
+            >Coming Soon</a>
+            <!--to have the click function disabled use pointer events none pointer events = mouse click-->
           </div>
         </div>
 
         <!--animation-->
+        <!--
         <div class="container">
           <div>
-            <picture class="berlin-illustration">
+            <picture class="berlin-illustration">-->
               <!--picture codepen-->
+              <!--
               <svg xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="505" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917" />
@@ -1037,9 +1044,9 @@
             </picture>
           </div>
           <div>
-          </div>
+          </div>-->
           <!--end animation-->
-        </div>
+        <!--</div>-->
       </div>
     </div>
 
