@@ -18,13 +18,12 @@ img {
 
 /*header styling*/
 header {
-  background-color: #F2EAE6; /*added to fix warning css*/
-  padding: 20px;
-  margin: 0 auto;
+  background-color: #F2EAE6;
+  /*color added to fix transparency*/
+  /*padding: 20px;
+  margin: 0 auto;*/
   text-align: center;
   min-width: 120px;
-
-
   /*box shadow*/
   -webkit-box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
   -moz-box-shadow: 7px 7px 5px 0px rgba(233, 219, 211, 0.75);
@@ -34,170 +33,163 @@ header {
 }
 
 main {
-  padding-top: 200px;
+  padding-top: 250px;
 }
-  /*was 99.8 but top header still was not showing so it was changed*/
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    background-color: #F2EAE6;
-    font-family: 'Tajawal', sans-serif;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 1.6;
-    width: 100%;
-    color: #617F4A;
-  }
+/*was 99.8 but top header still was not showing so it was changed*/
+h1,
+h2,
+h3,
+h4 {
+  background-color: #F2EAE6;
+  font-family: 'Tajawal', sans-serif;
+  text-align: center;
+  /*font-size: 30px;*/
+  /*font-size: 2.75em;*/
+  /*font-weight: bold;*/
+  line-height: 1.6;
+  width: 100%;
+}
 
-  h1 {
-    background-color: #F2EAE6;
-    font-size: 2.75em;
-    font-weight: 700;
-    width: 100%;
-    color: #617F4A;
-    padding: 15px;
-  }
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  color: #617F4A;
+  /*padding: 15px;*/
+}
 
-  h2 {
-    font-size: 2.25em;
-    font-weight: 700;
-    width: 100%;
-    color: #617F4A;
-    padding: 15px;
-  }
+h2 {
+  font-size: 2.75em;
+  font-weight: 700;
+  color: #617F4A;
+  /*padding: 15px;*/
+}
 
-  h3 {
-    font-size: 1.75em;
-    font-weight: 400;
-    width: 100%;
-    color: #8D2C2A;
-    padding: 15px;
-  }
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+  color: #8D2C2A;
+  /*padding: 15px;*/
+}
 
-  h4 {
-    font-size: 1.35em;
-    font-weight: 400;
-    width: 100%;
-    color: #8D2C2A;
-    padding: 15px;
-  }
+h4 {
+  font-size: 1.75em;
+  font-weight: 400;
+  color: #8D2C2A;
+  /*padding: 15px;*/
+}
 
-  a:visited {
-    color: #fff;
-  }
+a:visited {
+  background-color: #F2EAE6;
+  color: #fff;
+}
 
-  a:hover {
-    color: #fff;
-  }
+a:hover {
+  background-color: #F2EAE6;
+  color: #fff;
+}
 
-  /*must come after visited to be effective!! */
-  a:focus {
-    color: #617F4A;
-    text-decoration: underline;
-  }
+/*must come after visited to be effective!! */
+a:focus {
+  background-color: #F2EAE6;
+  color: #617F4A;
+  text-decoration: underline;
+}
 
-  a:active {
-    color: #617F4A;
-  }
+a:active {
+  background-color: #F2EAE6;
+  color: #617F4A;
+}
 
-  /*layout Styling*/
-  .container {
-    margin: 25px 0;
-    padding: 0 15px;
-    text-align: center;
-  }
+/*layout Styling*/
+.container {
+  margin: 25px 0;
+  padding: 0 15px;
+  text-align: center;
+}
 
-  .row {
-    margin: 25px 0;
-    padding: 0 15px;
-    text-align: center;
-    /* 25px top and bottom, 0 left and right */
-  }
+.row {
+  margin: 25px 0;
+  padding: 0 15px;
+  text-align: center;
+  /* 25px top and bottom, 0 left and right */
+}
 
 [class*="col-"] {
   float: left;
 }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-  .center {
-    text-align: center;
-    /*may have to remove for queries*/
-  }
+.center {
+  text-align: center;
+  /*may have to remove for queries*/
+}
 
-  .logo {
-    max-width: 120px;
-    margin: auto;
-    float:left;
-  }
+.logo {
+  max-width: 120px;
+  margin: auto;
+  float: left;
+}
 
-  .social {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-  }
+.social {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
 
-  #behance {
-    padding: 0 15px;
-  }
+#behance {
+  padding: 0 15px;
+}
 
-  #skills {
-    padding: 0 15px;
-  }
+#skills {
+  padding: 0 15px;
+}
 
-  #tools {
-    padding: 0 15px;
-  }
+#tools {
+  padding: 0 15px;
+}
 
-  #hero h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    text-align: center;
-    background-color: #F2EAE6;
-    padding: 20px 0;
-    display: block;
-    width: 100%;
-  }
+#hero h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 20px 0;
+  display: block;
+  /*width: 100%;*/
+}
 
-  /*#hero span {
+/*#hero span {
   display: block;
 }*/
-  #work {
-    text-align: center;
-  }
+#work {
+  text-align: center;
+}
 
-  #span {
-    display: inline-block;
-    width: 25%;
-    text-align: center;
-  }
+#span {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
 
-  #story {
-    text-align: center;
-  }
+#story {
+  text-align: center;
+}
 
-  #about-page h3 {
-    margin-top: 0;
-  }
-
-  /*#hero h1 {
-  margin: 0;
-  padding: 0.67em 0;
-}*/
+#about-page h3 {
+  margin-top: 0;
+}
 
 nav>ul {
   list-style-type: none;
-  padding:0px;
+  padding: 0px;
   margin: 0px;
+  margin-top: 115px;
 }
 
 nav>ul>li {
@@ -206,8 +198,6 @@ nav>ul>li {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-  color: #212b1c;
-  margin-top: auto;
   text-align: center;
 }
 
@@ -218,10 +208,6 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  text-decoration: none;
-  /*margin: auto;
-  /*width: 100%;*/
-  color: #212b1c;
 }
 
 nav>ul>li>a:visited {
@@ -229,6 +215,7 @@ nav>ul>li>a:visited {
   text-transform: uppercase;
   font-weight: 700;
   color: #212b1c;
+  background-color: #617F4A;
 }
 
 nav>ul>li>a:active {
@@ -236,16 +223,18 @@ nav>ul>li>a:active {
   text-transform: uppercase;
   font-weight: 700;
   color: #212b1c;
+  background-color: #617F4A;
 }
 
 nav>ul>li>a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #617F4A;
+  color: #fff;
+  background-color: #617F4A;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -268,13 +257,13 @@ nav>ul>li>a:hover {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgb(145, 177, 120);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -297,10 +286,12 @@ nav>ul>li>a:hover {
 
 .button:hover {
   opacity: 0.8;
+  background-color: #617F4A;
 }
 
 .button:active {
   opacity: 0.8;
+  background-color: #617F4A;
 }
 
 /*email button*/
@@ -364,25 +355,25 @@ Red Project Titles: #8D2C2A;
   header {
     text-align: unset;
     padding: 10px 0 4px;
-    }
+  }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 40px;
     text-decoration: none;
   }
 
-  nav > ul {
-  margin: 1em 0;
-  width: 100%;
+  nav>ul {
+    margin: 1em 0;
+    width: 100%;
   }
 
   nav>ul>li {
     display: inline-block;
     position: relative;
     align-content: center;
-    }
+  }
 
   #hero span {
     display: inline-block;
@@ -402,11 +393,13 @@ Red Project Titles: #8D2C2A;
   }
 
   .col-md-7 {
-    width: 60%; padding: 10px;
+    width: 60%;
+    padding: 10px;
   }
 
   .col-md-5 {
-    width: 40%; padding: 10px;
+    width: 40%;
+    padding: 10px;
   }
 
   .logo {
@@ -415,119 +408,121 @@ Red Project Titles: #8D2C2A;
   }
 }
 
-  /*large screens*/
-  @media only screen and (min-width: 1024px) {
-    header {
-      text-align: unset;
-      padding: 10px 0 4px;
-    }
-
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-      margin: auto;
-    }
-
-    .navtoggle li:not(:last-child) {
-      display: inline-block;
-    }
-
-    .navtoggle li:last-child {
-      display: none;
-    }
-
-    #hero span {
-      display: block;
-    }
-
-    .logo {
-      max-width: 90px;
-    }
-
-    .col-lg-7 {
-      width: 60%; padding: 10px;
-    }
-
-    .col-lg-5 {
-      width: 40%; padding: 10px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+/*large screens*/
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 10px 0 4px;
   }
 
-    /*left column
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    margin: auto;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .logo {
+    max-width: 90px;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+    padding: 10px;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*left column
 <div class="row">
   <div class="column col-md-6 col-lg-7">
     <picture>*/
-    /*right column
+/*right column
 <div class="column col-md-6 col-lg-5">
     <h3>Project name</h3>*/
+/*extra large screens*/
+@media only screen and (min-width: 1440px) {}
 
-    /*extra large screens*/
-    @media only screen and (min-width: 1440px) {
+/*animation*/
+/*
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
-      /*animation*/
-      .berlin-illustration {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-      }
 
-      @keyframes color-change {
-        from {
-          fill: #edc655;
-        }
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
 
-        to {
-          fill: #f76414;
-        }
-      }
+  to {
+    fill: #f76414;
+  }
+}
 
-      .sun {
-        animation-name: color-change;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-      }
+.sun {
+  animation-name: color-change;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 
-      @keyframes cloud-move {
-        from {
-          transform: translate(0, 50px);
-        }
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
 
-        to {
-          transform: translate(200px, 50px);
-        }
-      }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
 
-      .cloud-front {
-        animation-name: cloud-move;
-        animation-duration: 30s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-      }
+.cloud-front {
+  animation-name: cloud-move;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 
-      @keyframes cloud-move-reverse {
-        from {
-          transform: translate(446px, 48px);
-        }
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
 
-        to {
-          transform: translate(100px, 48px);
-        }
-      }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
 
-      .cloud-back {
-        animation-duration: 34s;
-        animation-name: cloud-move-reverse;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-      }
+.cloud-back {
+  animation-duration: 34s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}*/
