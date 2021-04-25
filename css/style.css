@@ -358,7 +358,7 @@ Red Project Titles: #8D2C2A;
 /*media queries = aka breakpoints for different devices and screens*/
 /*no css for small screens since small screens was defualt size*/
 /*medium screens*/
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 1023px) {
   header {
     text-align: unset;
     padding: 10px 0 4px;
