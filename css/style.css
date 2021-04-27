@@ -142,10 +142,9 @@ a:active {
   width: 100%;
 }
 
-.beautify {
-  width: auto;
-}
-
+/*.beautify {
+  width: 100%;
+}*/
 #behance {
   padding: 0 15px;
 }
@@ -193,7 +192,7 @@ nav>ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  }
+}
 
 .responsive nav>ul {
   margin-top: 115px;
