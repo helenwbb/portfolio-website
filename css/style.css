@@ -117,6 +117,7 @@ a:active {
 
 [class*="col-"] {
   float: left;
+  text-align: center;
 }
 
 .row::after {
@@ -151,10 +152,12 @@ a:active {
 
 #skills {
   padding: 0 15px;
+  align-content: center;
 }
 
 #tools {
   padding: 0 15px;
+  align-content: center;
 }
 
 #hero h1,
@@ -357,7 +360,7 @@ Red Project Titles: #8D2C2A;
 /*media queries = aka breakpoints for different devices and screens*/
 /*no css for small screens since small screens was defualt size*/
 /*medium screens*/
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 640px) {
   header {
     text-align: unset;
     padding: 10px 0 4px;
@@ -415,7 +418,7 @@ Red Project Titles: #8D2C2A;
 }
 
 /*large screens*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 10px 0 4px;
@@ -469,7 +472,7 @@ Red Project Titles: #8D2C2A;
 <div class="column col-md-6 col-lg-5">
     <h3>Project name</h3>*/
 /*extra large screens*/
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1024px) {}
 
 /*animation*/
 /*
