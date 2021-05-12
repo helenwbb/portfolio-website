@@ -4,10 +4,8 @@
 
 body {
   background-color: #fff;
-  font-family: atten-new, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 19px;
   font-weight: 300;
   text-align: center;
   line-height: 1.6;
@@ -28,8 +26,8 @@ header {
   min-width: 120px;
   /*box shadow*/
   -webkit-box-shadow: 7px 7px 5px 0px rgba(224, 224, 224, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(224, 224, 224, 0.75);
-  box-shadow: 7px 7px 5px 0px rgba(224, 224, 224, 0.75);
+  -moz-box-shadow:    7px 7px 5px 0px rgba(224, 224, 224, 0.75);
+  box-shadow:         7px 7px 5px 0px rgba(224, 224, 224, 0.75);
   position: fixed;
   width: 100%;
 }
@@ -44,9 +42,7 @@ h2,
 h3,
 h4 {
   background-color: #fff;
-  font-family: atten-new, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: 'Tajawal', sans-serif;
   text-align: center;
   line-height: 1.0;
   width: 100%;
@@ -67,13 +63,13 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  color: #117E7B;
+  color: #8D2C2A;
 }
 
 h4 {
   font-size: 1.75em;
   font-weight: 400;
-  color: #117E7B;
+  color: #8D2C2A;
 }
 
 a:visited {
@@ -236,7 +232,7 @@ nav>ul>li>a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #117E7B;
+  color: #617F4A;
   background-color: #fff;
 }
 
@@ -302,7 +298,7 @@ nav>ul>li>a:hover {
 
 /*email button*/
 .button.contact {
-  background-color: #117E7B;
+  background-color: #8D2C2A;
   color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
@@ -315,7 +311,7 @@ nav>ul>li>a:hover {
 
 /*CV Button*/
 .button.downloadcv {
-  background-color: #117E7B;
+  background-color: #617F4A;
   color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
@@ -324,7 +320,6 @@ nav>ul>li>a:hover {
 .button.downloadcv:hover {
   opacity: 0.8;
   text-decoration: none;
-  background-color: #617F4A;
 }
 
 .button.downloadcv:active {
